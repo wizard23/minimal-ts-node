@@ -1,3 +1,8 @@
+# mininimal node-ts boilderplate
+based on: https://github.com/Thomas1664/ts-node-template/
+
+original README by https://github.com/Thomas1664 down below:
+
 # ts-node-template
 
 This is boilerplate code for creating Typescript projects in a Node environment.

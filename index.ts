@@ -1,7 +1,25 @@
-import http from 'http'
+import { GameState, step } from "./src/game"
 
-http.createServer(handler).listen(80)
-
-function handler(req: any, res: any) {
-  console.log('Hello World')
+interface HelloWorld {
+    someText: string
+    someNumber: number
 }
+
+const hello: HelloWorld = {
+    someText: "test",
+    someNumber: 123
+}
+
+
+console.log("Hello brave new ts-node world!", hello)
+
+
+// TODO: finish game 
+
+let state: GameState = {
+    frame: 0
+}
+ 
+console.log("State before step", state)
+state = step(state)
+console.log("State after step", state)
